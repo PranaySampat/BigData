@@ -1,0 +1,15 @@
+Caniformia	0.245: Carnivora
+Carnivora	0.02:   Caniformia Feliformia Miacoidea Bowdich
+Centrolenidae	0.021777777777777778: Neobatrachia
+Cycloramphidae	0.021777777777777778: Neobatrachia
+Cyclosquamata	0.5916666666666667:   Cyclosquamata Aulopiformes
+Haloclavidae	0.07538461538461538: Athenaria
+Lobatolampeidae	0.098: Lobata
+Orycteropus	0.196: Orycteropodidae
+Osmeriformes	0.245: Protacanthopterygii
+Peramelemorphia	0.02:   Chaeropodidae Peramelidae Thylacomyidae Yaralidae Ameghino
+Proganochelydia	0.16333333333333333: Testudines
+Sagittariidae	0.245: Falconiformes
+Struthionidae	1.0:   Palaeotis Struthio
+Theria	0.245: Mammalia
+Upupidae	0.098: Coraciiformes
