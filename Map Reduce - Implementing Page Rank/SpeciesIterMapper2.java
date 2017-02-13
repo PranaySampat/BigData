@@ -49,7 +49,7 @@ package U.CC;
      try { 
         currScore = Double.parseDouble(pagerank); 
      } catch (Exception e) { 
-        currScore = 1.0;
+        currScore = 0.5;
      } 
 
      // get number of outlinks
@@ -67,7 +67,7 @@ package U.CC;
      }
 
      // collect each outlink, with the dampened PR of its inlink, and its inlink
-     Text toEmit = new Text((new Double(.98 * currScore / numoutlinks)).toString()); 
+     Text toEmit = new Text((new Double(.85 * currScore / numoutlinks)).toString()); 
      for (String page : pages) { 
        if(page.length() > 0) {
          output.collect(new Text(page), toEmit); 
@@ -76,7 +76,7 @@ package U.CC;
      } 
 
      // collect the inlink with its dampening factor, and all outlinks
-     output.collect(new Text(pagetitle), new Text(".02")); 
+     output.collect(new Text(pagetitle),new Text(new Double(0.15/(double)(numoutlinks)).toString())); 
      output.collect(new Text(pagetitle), new Text(" " + data)); 
    } 
  } 

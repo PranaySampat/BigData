@@ -24,7 +24,7 @@ package U.CC;
   
    public void reduce(WritableComparable key, Iterator values, 
                       OutputCollector output, Reporter reporter) throws IOException { 
-     double score = 0; 
+     double score = 0.0; 
      String outLinks = ""; 
   
      while (values.hasNext()) { 
